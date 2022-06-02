@@ -1,12 +1,11 @@
 <?php
 
 /*
-title
-link
 guid
-image
+title
 description
 pubDate
+atom:link href=
 */
 
 

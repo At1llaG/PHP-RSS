@@ -24,17 +24,24 @@
                 //echo "<li><a href='$entry->link' title='$entry->title'>" . $entry->title . "</a></li>";
                 
                 //echo "$key $entry->link \n";
-                echo "$key $entry->guid \n";
+                //echo "$key $entry->guid \n";
                 //echo "$key $entry->pubDate \n";
                 //echo "$key $entry->title \n";
                 //echo "$key $entry->description \n";
                 //echo "$key $entry->enclosure \n";
-                //echo "$key $entry->media_content \n";
+                //////var_dump( $entry->children('atom', true)->link->getAttribute('href'));
+                //children('xhtml', true)
+                print_r($entry->children('atom', true)->link->attributes()->{'href'});
                 //echo "$key $entry->media_description \n";
                 //echo "$key $entry->media_credit \n";
                 //echo "$key $entry->content \n";
 
+                //foreach($a->channel[0]->attributes() as $a => $b) {
+                //    echo $a,'="',$b,"\"\n";
+                //}
 
+                //$att = $entry->children('atom', true)->link->attributes()->{'href'};
+                //echo $att['href'];
 
 
 
