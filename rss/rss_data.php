@@ -2,6 +2,10 @@
 
     include('rss_sources.php');
 
+    //include(dirname( dirname(__FILE__) ) . '/publishers/sabah.php');
+
+
+
     $context = stream_context_create(
         array(
             'http' => array(
@@ -18,8 +22,49 @@
     
             // Instantiate XML element
             $a = new SimpleXMLElement($content);
-         
             
+            switch ($key) {
+                case "ahaber":
+                    //sabah($key, $value);
+                    break;
+                case "cnnturk":
+                    //sabah($key, $value);
+                    break;
+                case "enSonHaber":
+                    //sabah($key, $value);
+                    break;
+                case "hastanePlus":
+                    //sabah($key, $value);
+                    break;
+                case "hastanePlusGoz":
+                    //sabah($key, $value);
+                    break;
+                case "milliyet":
+                    //sabah($key, $value);
+                    break;
+                case "mynet":
+                    //sabah($key, $value);
+                    break;
+                case "sabah":
+                    sabah($key, $value);
+                    break;
+                case "saglikHaberAjansi":
+                    //sabah($key, $value);
+                    break;
+                case "sektorel":
+                    //sabah($key, $value);
+                    break;
+                case "sozcu":
+                    //sabah($key, $value);
+                    break;
+                case "trt":
+                    //sabah($key, $value);
+                    break;
+                default:
+                    echo "Your favorite color is neither red, blue, nor green!";
+            }
+
+
             foreach($a->channel->item as $entry) {
                 //echo "<li><a href='$entry->link' title='$entry->title'>" . $entry->title . "</a></li>";
                 
@@ -31,7 +76,7 @@
                 //echo "$key $entry->enclosure \n";
                 //////var_dump( $entry->children('atom', true)->link->getAttribute('href'));
                 //children('xhtml', true)
-                print_r($entry->children('atom', true)->link->attributes()->{'href'});
+                ////////////////////////////////////////print_r($entry->children('atom', true)->link->attributes()->{'href'});
                 //echo "$key $entry->media_description \n";
                 //echo "$key $entry->media_credit \n";
                 //echo "$key $entry->content \n";
