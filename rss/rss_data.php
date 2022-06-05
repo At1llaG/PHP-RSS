@@ -27,16 +27,16 @@
                     ahaber($key, $value);
                     break;
                 case "cnnturk":
-                    //sabah($key, $value);
+                    cnnturk($key, $value);
                     break;
                 case "enSonHaber":
-                    //sabah($key, $value);
+                    enSonHaber($key, $value);
                     break;
                 case "hastanePlus":
-                    //sabah($key, $value);
+                    hastanePlus($key, $value);
                     break;
                 case "hastanePlusGoz":
-                    //sabah($key, $value);
+                    hastanePlus($key, $value);
                     break;
                 case "milliyet":
                     //sabah($key, $value);

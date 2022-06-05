@@ -12,7 +12,6 @@
             ($title, $link, $media, $meta_description, $content, $pubDate);";
 
         insertMultiple($conn, $query);
-
     }
 
 
