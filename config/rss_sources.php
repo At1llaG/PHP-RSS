@@ -5,7 +5,6 @@ include(dirname( dirname(__FILE__) ) . '/publishers/cnnturk.php');
 include(dirname( dirname(__FILE__) ) . '/publishers/enSonHaber.php');
 //include(dirname( dirname(__FILE__) ) . '/publishers/haberturk.php');
 include(dirname( dirname(__FILE__) ) . '/publishers/hastanePlus.php');
-include(dirname( dirname(__FILE__) ) . '/publishers/hastanePlusGoz.php');
 include(dirname( dirname(__FILE__) ) . '/publishers/milliyet.php');
 include(dirname( dirname(__FILE__) ) . '/publishers/mynet.php');
 //include(dirname( dirname(__FILE__) ) . '/publishers/ntv.php');

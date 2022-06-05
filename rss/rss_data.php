@@ -1,7 +1,6 @@
 <?php
 
-    include('rss_sources.php');
-
+    include(dirname( dirname(__FILE__) ) . '/config/rss_sources.php');
     //include(dirname( dirname(__FILE__) ) . '/publishers/sabah.php');
 
 

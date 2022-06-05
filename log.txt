@@ -1,39 +1,107 @@
-[29-May-2022 21:52:34 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 21:52:34 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysqli.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 21:52:34 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_pdo_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 21:52:44 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 21:52:44 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysqli.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 21:52:44 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_pdo_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 21:52:49 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 21:52:49 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysqli.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 21:52:49 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_pdo_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:00:34 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:00:34 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysqli.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:00:34 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_pdo_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:14:56 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:14:56 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysqli.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:14:56 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_pdo_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:15:19 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:15:19 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysqli.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:15:19 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_pdo_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:15:19 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:15:19 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysqli.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:15:19 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_pdo_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:15:21 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:15:21 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysqli.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:15:21 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_pdo_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:15:24 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:15:24 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysqli.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:15:24 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_pdo_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:16:44 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:16:44 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysqli.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:16:44 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_pdo_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:16:54 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:16:54 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysqli.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:16:54 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_pdo_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:16:59 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:16:59 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysqli.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:16:59 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_pdo_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:19:14 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:19:14 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysqli.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_mysqli.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
-[29-May-2022 22:19:14 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_pdo_mysql.dll' (tried: /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll: cannot open shared object file: No such file or directory), /opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so (/opt/lampp/lib/php/extensions/no-debug-non-zts-20210902/php_pdo_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+title
+link
+description
+guid
+enclosure url=
+media:content url=
+category
+pubDate
+
+
+guid
+title
+description
+pubDate
+atom:link
+image
+
+title
+link
+guid
+image
+description
+pubDate
+
+category
+title
+description
+pubdate
+img
+media:content url=
+media:thumbnail url=
+enclosure url=
+link
+guid
+
+
+title
+description
+link
+pubDate
+
+guid
+title
+description
+pubDate
+atom:link href=
+
+
+
+
+title
+link
+pubDate
+description
+ipimage //COK UFAK
+img640x360
+img300x300
+iplink
+maincategory
+subcategory
+
+
+title
+link
+description
+guid
+enclosure url=
+media:content url=
+category
+pubDate
+
+title
+description
+news
+image
+thumb
+link
+pubDate
+
+
+
+title
+category
+link
+guid
+description
+content:encoded
+pubDate
+enclosure url=
+
+
+guid
+pubDate
+title
+description
+enclosure url=
+media:content url=
+content:encoded
+link
+
+
+title
+description
+link
+enclosure url=
+
+

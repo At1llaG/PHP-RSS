@@ -1,11 +1,13 @@
 <?php
 
-include('connect_mysql.php');
-include('create_db.php');
-include('create_table.php');
+include(dirname( dirname(__FILE__) ) . '/sql/connect_mysql.php');
+include(dirname( dirname(__FILE__) ) . '/sql/create_db.php');
+include(dirname( dirname(__FILE__) ) . '/sql/create_table.php');
 
 $dbname='saglikdb';
-$tableName = "tablename2";
+$tableName = "tablename3";
+
+$conn = connectMysql();
 
 if (empty (mysqli_fetch_array(mysqli_query($conn,"SHOW DATABASES LIKE '$dbname'")))) 
 {

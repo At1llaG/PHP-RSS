@@ -6,8 +6,15 @@ include(dirname( dirname(__FILE__) ) . '/config/errors.php');
 
 //echo "$conn";
 
+// CREATE DATABASE mydb
+//   DEFAULT CHARACTER SET utf8
+//   DEFAULT COLLATE utf8_general_ci;
+
 function createDatabase($conn, $dbName) {
-  $sql = "CREATE DATABASE $dbName";
+  $sql = "CREATE DATABASE $dbName DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;";
+
+
+
   if ($conn->query($sql) === TRUE) {
     echo "Database created successfully";
   } else {
