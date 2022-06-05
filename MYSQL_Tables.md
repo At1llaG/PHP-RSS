@@ -15,6 +15,10 @@ link
 
 ### SAMPLE QUERY
 
+$sql = "INSERT INTO MyGuests (firstname, lastname, email)
+VALUES ('John', 'Doe', 'john@example.com');";
+
+
 INSERT INTO rsslist 
     (guid, pubDate, title, description, enclosure, media_content, media_description, media_credit, content, link) VALUES 
     ('https://www.sozcu.com.tr/2022/saglik/devlet-hastanesinin-yogun-bakim-kapisi-bir-yildir-arizali-7159192/', 
