@@ -47,6 +47,7 @@
                 $content = $entry->children('content', true)->encoded;
                 $pubDate = $entry->pubDate;
 
+                //$conn->real_escape_string
                 $title = addslashes(htmlspecialchars_decode($title, ENT_QUOTES));
                 $link = addslashes(htmlspecialchars_decode($link, ENT_QUOTES));
                 $media = addslashes(htmlspecialchars_decode($media, ENT_QUOTES));
@@ -65,7 +66,7 @@
 
                     $query .= "INSERT INTO $tableName
                         (title, link, media, meta_description, content, pubDate) VALUES 
-                        ('$title', '$link', '$media', '$meta_description', $content, '$pubDate'); ";
+                        ('$title', '$link', '$media', '$meta_description', '$content', '$pubDate'); ";
 
                 }
                 

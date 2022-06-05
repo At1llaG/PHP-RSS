@@ -38,7 +38,7 @@
             foreach($a->channel->item as $entry) {
                 
                 $title = $entry->title;
-                $link = $entry->link;
+                $link = $entry->children('atom', true)->link->attributes()->{'href'};
                 $media = $entry->image;
                 $meta_description = $entry->description;
                 $pubDate = $entry->pubDate;

@@ -39,25 +39,25 @@
                     hastanePlus($key, $value);
                     break;
                 case "milliyet":
-                    //sabah($key, $value);
+                    milliyet($key, $value);
                     break;
                 case "mynet":
-                    //sabah($key, $value);
+                    mynet($key, $value);
                     break;
                 case "sabah":
-                    //sabah($key, $value);
+                    sabah($key, $value);
                     break;
                 case "saglikHaberAjansi":
-                    //sabah($key, $value);
+                    saglikHaberAjansi($key, $value);
                     break;
                 case "sektorel":
-                    //sabah($key, $value);
+                    sektorel($key, $value);
                     break;
                 case "sozcu":
-                    //sabah($key, $value);
+                    sozcu($key, $value);
                     break;
                 case "trt":
-                    //sabah($key, $value);
+                    trt($key, $value);
                     break;
                 default:
                     echo "Your favorite color is neither red, blue, nor green!";

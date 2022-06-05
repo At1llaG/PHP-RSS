@@ -64,7 +64,7 @@
 
                     $query .= "INSERT INTO $tableName
                         (title, link, media, meta_description, content, pubDate) VALUES 
-                        ('$title', '$link', '$media', '$meta_description', $content, '$pubDate'); ";
+                        ('$title', '$link', '$media', '$meta_description', '$content', '$pubDate'); ";
 
                 }
                 
