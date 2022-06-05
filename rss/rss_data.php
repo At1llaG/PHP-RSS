@@ -24,7 +24,7 @@
             
             switch ($key) {
                 case "ahaber":
-                    //sabah($key, $value);
+                    ahaber($key, $value);
                     break;
                 case "cnnturk":
                     //sabah($key, $value);
@@ -45,7 +45,7 @@
                     //sabah($key, $value);
                     break;
                 case "sabah":
-                    sabah($key, $value);
+                    //sabah($key, $value);
                     break;
                 case "saglikHaberAjansi":
                     //sabah($key, $value);

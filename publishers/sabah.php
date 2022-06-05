@@ -12,8 +12,8 @@ pubDate
 */
 
     //include(dirname( dirname(__FILE__) ) . '/rss/rss_to_sql.php');
-    include(dirname( dirname(__FILE__) ) . '/sql/connect_mysql.php');
-    include(dirname( dirname(__FILE__) ) . '/sql/insert_multiple.php');
+    include_once(dirname( dirname(__FILE__) ) . '/sql/connect_mysql.php');
+    include_once(dirname( dirname(__FILE__) ) . '/sql/insert_multiple.php');
 
     function sabah($key, $value) {
 

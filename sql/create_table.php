@@ -17,7 +17,7 @@ function createTable($conn, $tableName) {
     meta_description TEXT, /* description is a reserved word */
     content TEXT,
     pubDate TEXT /*, reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP */
-    ) CHARACTER SET latin5 COLLATE latin5_turkish_ci"; 
+    ) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci"; 
     
     if ($conn->query($sql) === TRUE) {
       echo "Table $tableName created successfully";
