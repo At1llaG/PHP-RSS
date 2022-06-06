@@ -26,7 +26,7 @@ if ($mysqli->connect_error) {
 }
 
 // SQL query to select data from database
-$sql = "SELECT * FROM rsslist ORDER BY id DESC ";
+$sql = "SELECT * FROM tablename3 ORDER BY id DESC ";
 $result = $mysqli->query($sql);
 $mysqli->close();
 ?>
@@ -80,10 +80,12 @@ $mysqli->close();
 		<!-- TABLE CONSTRUCTION-->
 		<table>
 			<tr>
-				<th>GFG UserHandle</th>
-				<th>Practice Problems</th>
-				<th>Coding Score</th>
-				<th>GFG Articles</th>
+				<th>Title</th>
+				<th>Link</th>
+				<th>Media</th>
+				<th>Description</th>
+				<th>Content</th>
+				<th>PubDate</th>
 			</tr>
 			<!-- PHP CODE TO FETCH DATA FROM ROWS-->
 			<?php // LOOP TILL END OF DATA
@@ -92,11 +94,15 @@ $mysqli->close();
 			?>
 			<tr>
 				<!--FETCHING DATA FROM EACH
-					ROW OF EVERY COLUMN-->
+					ROW OF EVERY COLUMN
+					(title, link, media, meta_description, content, pubDate)
+				--> 
 				<td><?php echo $rows['title'];?></td>
-				<td><?php echo $rows['description'];?></td>
-				<td><?php echo $rows['content'];?></td>
 				<td><?php echo $rows['link'];?></td>
+				<td><?php echo $rows['media'];?></td>
+				<td><?php echo $rows['meta_description'];?></td>
+				<td><?php echo $rows['content'];?></td>
+				<td><?php echo $rows['pubDate'];?></td>
 			</tr>
 			<?php
 				}
