@@ -1,44 +1,50 @@
 <?php
 
-    include(dirname( dirname(__FILE__) ) . '/sql/connect_mysql.php');
-    include(dirname( dirname(__FILE__) ) . '/sql/create_db.php');
-    include(dirname( dirname(__FILE__) ) . '/sql/create_table.php');
+    include_once(dirname( dirname(__FILE__) ) . '/config/sql_conf.php');
+    include_once(dirname( dirname(__FILE__) ) . '/sql/connect_mysql.php');
+    include_once(dirname( dirname(__FILE__) ) . '/sql/disconnect_mysql.php');
+    include_once(dirname( dirname(__FILE__) ) . '/sql/create_db.php');
+    include_once(dirname( dirname(__FILE__) ) . '/sql/create_table.php');
 
-    $dbname='saglikdb';
-    $tableName = "tablename3";
+    $conf = new SqlConf();
+
+    $dbname = $conf->getDbName();
+    $tableName = $conf->getTableName();
 
     $conn = connectMysql();
 
     if (empty (mysqli_fetch_array(mysqli_query($conn,"SHOW DATABASES LIKE '$dbname'")))) 
     {
-        echo "DB not exist<br>"; 
+        echo "DB not exist"; 
+        echo PHP_EOL;
+
         createDatabase($conn, $dbname);
     }
-    else
-    {
-        echo "DB exist<br>";
+
+    else {
+        echo "DB exist";
+        echo PHP_EOL;
 
         $conn -> select_db("$dbname");
 
-
-        echo "3<br>";
-
-        
-        if ($result = $conn->query( "SHOW TABLES LIKE '".$tableName."'" )) {
-            echo "4<br>";
-            if($result->num_rows == 1) {
+        if ($result = $conn->query( "SHOW TABLES LIKE '".$tableName."'" )) 
+        {
+            if($result->num_rows == 1) 
+            {
                 echo "Table exists";
+                echo PHP_EOL;
             }
+
             else {
                 echo "Table does not exist";
+                echo PHP_EOL;
 
-
-                
                 createTable($conn, $tableName);
             }
-        
         }
         
     }
+
+    disconnect($conn);
 
 ?>

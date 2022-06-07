@@ -2,20 +2,17 @@
 
     /*
     title
-    link
-    description
-    guid
-    enclosure url=
-    media:content url=
-    category
-    pubDate
+    published -> pubDate
+    link href=
+    content
     */
 
+    
     include_once(dirname( dirname(__FILE__) ) . '/sql/connect_mysql.php');
     include_once(dirname( dirname(__FILE__) ) . '/sql/insert_multiple.php');
     include_once(dirname( dirname(__FILE__) ) . '/config/sql_conf.php');
 
-    function ahaber($key, $value) {
+    function ntv($key, $value) {
 
         $context = stream_context_create(
             array(
@@ -38,37 +35,30 @@
             $content = file_get_contents($value, false, $context);
             $a = new SimpleXMLElement($content);
 
-            foreach($a->channel->item as $entry) {
+            foreach($a->entry as $entry) {
                 
                 $title = $entry->title;
-                $link = $entry->link;
-                $media = $entry->enclosure->attributes()->{'url'};
-                $meta_description = $entry->description;
-                $pubDate = $entry->pubDate;
+                $link = $entry->link->attributes()->{'href'};
+                $content = $entry->content;
+                $pubDate = $entry->published;
 
                 $title = addslashes(htmlspecialchars_decode($title, ENT_QUOTES));
                 $link = addslashes(htmlspecialchars_decode($link, ENT_QUOTES));
-                $meta_description = addslashes(htmlspecialchars_decode($meta_description, ENT_QUOTES));
-                $media = addslashes(htmlspecialchars_decode($media, ENT_QUOTES));
+                $content = addslashes(htmlspecialchars_decode($content, ENT_QUOTES));
                 $pubDate = addslashes(htmlspecialchars_decode($pubDate, ENT_QUOTES));
 
                 $result = $conn->query("SELECT * from $tableName WHERE link='$link'");
 
-                if ($result->num_rows > 0) 
-                {
-                    echo "DATA exists";
-                    echo PHP_EOL;
-                    
-                    echo "$key $title";
-                    echo PHP_EOL;
+                if ($result->num_rows > 0) {
+                    echo "DATA exists\n";
+                    echo "$key $title\n";
                 }
                 else {
-                    echo "DATA does not exist";
-                    echo PHP_EOL;
+                    echo "DATA does not exist\n";
 
                     $query .= "INSERT INTO $tableName
                         (title, link, media, meta_description, content, pubDate) VALUES 
-                        ('$title', '$link', '$media', '$meta_description', NULL, '$pubDate'); ";
+                        ('$title', '$link', NULL, NULL, '$content', '$pubDate'); ";
 
                 }
                 
@@ -79,13 +69,13 @@
                 insertMultiple($conn, $query);
             }
 
-            echo PHP_EOL;
+            echo "<ul>";
 
         } catch (Exception $e) {
             echo "Exception at $key $e";
-            echo PHP_EOL;
         }
 
     }
+
 
 ?>

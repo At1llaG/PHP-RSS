@@ -1,12 +1,11 @@
 <?php
 
-    
     mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
     class SqlConf {
 
-        private $dbname = "saglikdb";
-        private $tableName = "tablename3";
+        private $dbname = "SaglikDB";
+        private $tableName = "Entries";
 
         public function setDbName($dbname) {
             $this->dbname = $dbname;
@@ -27,7 +26,10 @@
 
     }
 
-    //$conf = new MyClass();
+    //USAGE =>
+
+    //include_once(dirname( dirname(__FILE__) ) . '/config/sql_conf.php');
+    //$conf = new SqlConf();
     //echo 'DB Name: ' . $conf->getDbName().' Table Name: ' . $conf->getTableName();
 
 ?>
