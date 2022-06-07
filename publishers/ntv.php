@@ -7,7 +7,6 @@
     content
     */
 
-    
     include_once(dirname( dirname(__FILE__) ) . '/sql/connect_mysql.php');
     include_once(dirname( dirname(__FILE__) ) . '/sql/insert_multiple.php');
     include_once(dirname( dirname(__FILE__) ) . '/config/sql_conf.php');
@@ -50,8 +49,11 @@
                 $result = $conn->query("SELECT * from $tableName WHERE link='$link'");
 
                 if ($result->num_rows > 0) {
-                    echo "DATA exists\n";
-                    echo "$key $title\n";
+                    echo "DATA exists";
+                    echo PHP_EOL;
+
+                    echo "$key $title";
+                    echo PHP_EOL;
                 }
                 else {
                     echo "DATA does not exist\n";
@@ -69,10 +71,11 @@
                 insertMultiple($conn, $query);
             }
 
-            echo "<ul>";
+            echo PHP_EOL;
 
         } catch (Exception $e) {
             echo "Exception at $key $e";
+            echo PHP_EOL;
         }
 
     }

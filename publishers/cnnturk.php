@@ -38,14 +38,10 @@
 
             foreach($a->channel->item as $entry) {
 
-                //htmlspecialchars_decode($str, ENT_QUOTES)
-                //$title = addslashes($entry->title);
-                //addslashes(htmlspecialchars_decode($entry->title, ENT_QUOTES));
-
                 $title = $entry->title;
                 $link = $entry->children('atom', true)->link->attributes()->{'href'};
                 $meta_description = $entry->description;
-                $media = $entry->image; //$enclosure_url
+                $media = $entry->image;
                 $pubDate = $entry->pubDate;
 
                 $title = addslashes(htmlspecialchars_decode($title, ENT_QUOTES));
@@ -57,11 +53,15 @@
                 $result = $conn->query("SELECT * from $tableName WHERE link='$link'");
 
                 if ($result->num_rows > 0) {
-                    echo "DATA exists\n";
-                    echo "$key $title\n";
+                    echo "DATA exists";
+                    echo PHP_EOL;
+
+                    echo "$key $title";
+                    echo PHP_EOL;
                 }
                 else {
-                    echo "DATA does not exist\n";
+                    echo "DATA does not exist";
+                    echo PHP_EOL;
 
                     $query .= "INSERT INTO $tableName
                         (title, link, media, meta_description, content, pubDate) VALUES 
@@ -76,10 +76,11 @@
                 insertMultiple($conn, $query);
             }
 
-            echo "<ul>";
+            echo PHP_EOL;
 
         } catch (Exception $e) {
             echo "Exception at $key $e";
+            echo PHP_EOL;
         }
 
     }

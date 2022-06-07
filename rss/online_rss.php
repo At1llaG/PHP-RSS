@@ -8,6 +8,4 @@
         echo PHP_EOL;
     }
 
-    echo "</ul>";
-
 ?>

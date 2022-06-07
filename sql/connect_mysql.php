@@ -1,25 +1,29 @@
 <?php
 
-//include_once('create_db.php');
+  include(dirname( dirname(__FILE__) ) . '/config/sql_conf.php');
 
-function connectMysql() {
-  $servername = "localhost:3306";
-  $username = "root";
-  $password = "password";
+  function connectMysql() {
 
-  // Create connection
-  $conn = new mysqli($servername, $username, $password);
+    $conf = new SqlConf();
 
-  $conn->set_charset("utf8");
+    $username = $conf->getUserName();
+    $password = $conf->getPassword();
 
-  // Check connection
-  if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    $database = $conf->getDatabase();
+
+    $hostname = $conf->getHostname();
+
+    $conn = new mysqli($hostname, $username, $password);
+    $conn->set_charset("utf8");
+
+    if ($conn->connect_error) {
+      die('Connect Error (' . $conn->connect_errno . ') '. $conn->connect_error);
+    }
+
+    echo "Connected successfully";
+    echo PHP_EOL;
+
+    return $conn;
   }
-  echo "Connected successfully";
-
-  return $conn;
-}
-
 
 ?>

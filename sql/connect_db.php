@@ -1,23 +1,29 @@
 <?php
 
-// Username is root
-$user = 'root';
-$password = 'password';
+	include(dirname( dirname(__FILE__) ) . '/config/sql_conf.php');
 
-// Database name is saglikdb
-$database = 'saglikdb';
+	function connectMysql() {
 
-// Server is localhost with port number 3306 with XAMPP
-$servername='localhost:3306';
-$conn = new mysqli($servername, $user, $password, $database);
+		$conf = new SqlConf();
 
-// Checking for connections
-if ($conn->connect_error) {
-	die('Connect Error (' .
-	$conn->connect_errno . ') '.
-	$conn->connect_error);
-}
+		$user = $conf->getUserName();
+		$password = $conf->getPassword();
 
-echo "Connected successfully";
+		$database = $conf->getDatabase();
+
+		$servername = $conf->getHostname();
+
+		$conn = new mysqli($servername, $user, $password, $database);
+		$conn->set_charset("utf8");
+
+		if ($conn->connect_error) {
+			die('Connect Error (' . $conn->connect_errno . ') '. $conn->connect_error);
+		}
+
+		echo "Connected successfully";
+		echo PHP_EOL;
+
+		return $conn;
+	}
 
 ?>
