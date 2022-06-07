@@ -38,7 +38,7 @@ $mysqli->close();
 
 <head>
 	<meta charset="UTF-8">
-	<title>GFG User Details</title>
+	<title>Display SQL Databe Entries</title>
 	<!-- CSS FOR STYLING THE PAGE -->
 	<style>
 		table {
@@ -76,7 +76,7 @@ $mysqli->close();
 
 <body>
 	<section>
-		<h1>MONITOR DATABSE</h1>
+		<h1>Databe Entries</h1>
 		<!-- TABLE CONSTRUCTION-->
 		<table>
 			<tr>
