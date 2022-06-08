@@ -16,7 +16,7 @@ link
 ### SAMPLE QUERY
 
 $sql = "INSERT INTO MyGuests (firstname, lastname, email)
-VALUES ('John', 'Doe', 'john@example.com');";
+    VALUES ('John', 'Doe', 'john@example.com');";
 
 
 INSERT INTO rsslist 
