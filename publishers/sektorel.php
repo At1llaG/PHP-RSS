@@ -12,6 +12,7 @@
     */
     
     include_once(dirname( dirname(__FILE__) ) . '/sql/connect_mysql.php');
+    include_once(dirname( dirname(__FILE__) ) . '/sql/disconnect_mysql.php');
     include_once(dirname( dirname(__FILE__) ) . '/sql/insert_multiple.php');
     include_once(dirname( dirname(__FILE__) ) . '/config/sql_conf.php');
 
@@ -77,7 +78,6 @@
 
             if($query != "")
             {
-                echo "$query";
                 insertMultiple($conn, $query);
             }
 
@@ -87,6 +87,8 @@
             echo "Exception at $key $e";
             echo PHP_EOL;
         }
+
+        disconnect($conn);
 
     }
 

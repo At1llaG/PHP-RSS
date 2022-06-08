@@ -4,14 +4,16 @@
   include('connect_db.php');
 
   $condition = "title='Haber Basligi'";
-  $sql = "UPDATE MyGuests SET $condition WHERE id=2";
+  $sql = "UPDATE Entries SET $condition WHERE id=2";
 
   if ($conn->query($sql) === TRUE) {
-    echo "Record updated successfully";
+    echo "Record updated";
+    echo PHP_EOL;
   } 
   
   else {
     echo "Error updating record: " . $conn->error;
+    echo PHP_EOL;
   }
 
 ?>

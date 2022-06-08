@@ -20,9 +20,6 @@
       die('Connect Error (' . $conn->connect_errno . ') '. $conn->connect_error);
     }
 
-    echo "Connected successfully";
-    echo PHP_EOL;
-
     return $conn;
   }
 

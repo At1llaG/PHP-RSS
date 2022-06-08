@@ -11,6 +11,7 @@
     */
 
     include_once(dirname( dirname(__FILE__) ) . '/sql/connect_mysql.php');
+    include_once(dirname( dirname(__FILE__) ) . '/sql/disconnect_mysql.php');
     include_once(dirname( dirname(__FILE__) ) . '/sql/insert_multiple.php');
     include_once(dirname( dirname(__FILE__) ) . '/config/sql_conf.php');
 
@@ -85,6 +86,8 @@
             echo "Exception at $key $e";
             echo PHP_EOL;
         }
+
+        disconnect($conn);
 
     }
 

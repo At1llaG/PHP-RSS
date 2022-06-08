@@ -14,5 +14,4 @@
         insertMultiple($conn, $query);
     }
 
-
 ?>

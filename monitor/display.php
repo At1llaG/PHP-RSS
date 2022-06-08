@@ -1,36 +1,21 @@
 <?php
 
-ini_set('display_errors', 1);
-ini_set('log_erros',1);
-ini_set('error_log', dirname( dirname(__FILE__) ) . 'logs/log.txt');
+	include_once(dirname( dirname(__FILE__) ) . '/config/errors.php');
+	include_once(dirname( dirname(__FILE__) ) . '/sql/connect_mysql.php');
+	include_once(dirname( dirname(__FILE__) ) . '/config/sql_conf.php');
 
+	$conf = new SqlConf();
 
+	$dbname = $conf->getDatabase();
+	$tableName = $conf->getTableName();
+	$conn = connectMysql();
+	$conn -> select_db("$dbname");
 
-// Username is root
-$user = 'root';
-$password = 'password';
+	$sql = "SELECT id, title, link, media, meta_description, content, pubDate FROM $tableName ORDER BY id DESC ";
+	$result = $conn->query($sql);
+	$conn->close();
 
-// Database name is gfg
-$database = 'saglikdb';
-
-// Server is localhost with
-// port number 3308
-$servername='localhost:3306';
-$mysqli = new mysqli($servername, $user, $password, $database);
-
-// Checking for connections
-if ($mysqli->connect_error) {
-	die('Connect Error (' .
-	$mysqli->connect_errno . ') '.
-	$mysqli->connect_error);
-}
-
-// SQL query to select data from database
-$sql = "SELECT * FROM tablename3 ORDER BY id DESC ";
-$result = $mysqli->query($sql);
-$mysqli->close();
 ?>
-
 
 
 <!DOCTYPE html>
@@ -39,24 +24,22 @@ $mysqli->close();
 <head>
 	<meta charset="UTF-8">
 	<title>Display SQL Databe Entries</title>
-	<!-- CSS FOR STYLING THE PAGE -->
 	<style>
 		table {
 			margin: 0 auto;
 			font-size: large;
-			border: 1px solid black;
+			border: 2px solid black;
 		}
 
 		h1 {
 			text-align: center;
-			color: #006600;
+			color: #04075e;
 			font-size: xx-large;
-			font-family: 'Gill Sans', 'Gill Sans MT',
-			' Calibri', 'Trebuchet MS', 'sans-serif';
+			font-family: "Times New Roman", Times, serif;
 		}
 
 		td {
-			background-color: #E4F5D4;
+			background-color: #dbe0ff;
 			border: 1px solid black;
 		}
 
@@ -64,7 +47,7 @@ $mysqli->close();
 		td {
 			font-weight: bold;
 			border: 1px solid black;
-			padding: 10px;
+			padding: 9px;
 			text-align: center;
 		}
 
@@ -77,7 +60,6 @@ $mysqli->close();
 <body>
 	<section>
 		<h1>Databe Entries</h1>
-		<!-- TABLE CONSTRUCTION-->
 		<table>
 			<tr>
 				<th>Title</th>
@@ -87,16 +69,12 @@ $mysqli->close();
 				<th>Content</th>
 				<th>PubDate</th>
 			</tr>
-			<!-- PHP CODE TO FETCH DATA FROM ROWS-->
-			<?php // LOOP TILL END OF DATA
+
+			<?php
 				while($rows=$result->fetch_assoc())
 				{
 			?>
 			<tr>
-				<!--FETCHING DATA FROM EACH
-					ROW OF EVERY COLUMN
-					(title, link, media, meta_description, content, pubDate)
-				--> 
 				<td><?php echo $rows['title'];?></td>
 				<td><?php echo $rows['link'];?></td>
 				<td><?php echo $rows['media'];?></td>
