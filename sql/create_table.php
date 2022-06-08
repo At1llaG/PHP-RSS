@@ -14,7 +14,9 @@
       
       if ($conn->query($sql) === TRUE) {
         echo "Table $tableName created successfully";
-      } else {
+      } 
+      
+      else {
         echo "Error creating table: " . $conn->error;
       }
 

@@ -35,7 +35,7 @@
 
         try {
 
-            $content = file_get_contents($value, false, $context);
+            $content = file_get_contents($value.'?'.mt_rand(), false, $context);
             $a = new SimpleXMLElement($content);
 
             foreach($a->channel->item as $entry) {

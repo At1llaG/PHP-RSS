@@ -5,9 +5,13 @@
         $sql = "TRUNCATE TABLE $tableName";
 
         if ($conn->query($sql) === TRUE) {
-            echo "cleared table";
-        } else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
+            echo "Table Cleared.";
+            echo PHP_EOL;
+        } 
+        
+        else {
+            echo "Error: " . $sql . PHP_EOL . $conn->error;
+            echo PHP_EOL;
         }
 
     }

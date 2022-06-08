@@ -38,7 +38,7 @@
 
         try {
 
-            $content = file_get_contents($value, false, $context);
+            $content = file_get_contents($value.'?'.mt_rand(), false, $context);
             $a = new SimpleXMLElement($content);
 
             foreach($a->channel->item as $entry) {
@@ -81,7 +81,7 @@
                 insertMultiple($conn, $query);
             }
 
-            echo "<ul>";
+            echo PHP_EOL;
 
         } catch (Exception $e) {
             echo "Exception at $key $e";

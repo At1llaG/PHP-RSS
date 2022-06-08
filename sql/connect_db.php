@@ -2,7 +2,7 @@
 
 	include(dirname( dirname(__FILE__) ) . '/config/sql_conf.php');
 
-	function connectMysql() {
+	function connectDatabase() {
 
 		$conf = new SqlConf();
 
