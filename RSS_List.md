@@ -1,50 +1,44 @@
-### RSS List for Health News in Turkey
+# RSS List for Health News in Turkey
 
-# AHABER
+### AHABER
 https://www.ahaber.com.tr/rss/saglik.xml
 
-# CNN TÜRK
+### CNN TÜRK
 https://www.cnnturk.com/feed/rss/saglik/news
 
-# HABERTURK.COM
+### HABERTURK.COM
 http://www.haberturk.com/rss/kategori/saglik.xml
 
-# Medimagazin Sağlık Haber Portalı - Güncel
-https://www.medimagazin.com.tr/rss/1/11/rss.xml
-
-# Medimagazin Sağlık Haber Portalı - Sağlık Çalışanları
-http://www.medimagazin.com.tr/rss/1/6/rss.xml
-
-# Milliyet
+### Milliyet
 http://www.milliyet.com.tr/rss/rssnew/saglikrss.xml
 
-# Mynet Sağlık Haberler
+### Mynet Sağlık Haberler
 http://www.mynet.com/haber/rss/kategori/saglik/
 
-# ntv.com.tr
+### ntv.com.tr
 https://www.ntv.com.tr/saglik.rss
 
-# SABAH
+### SABAH
 https://www.sabah.com.tr/rss/saglik.xml
 
-# Sağlık Haber Ajansı
+### Sağlık Haber Ajansı
 https://www.saglikhaberajansi.com/rss.xml
 
-# En Son Haber - Sağlık Haberleri
+### En Son Haber - Sağlık Haberleri
 http://www.ensonhaber.com/rss/saglik.xml
 
-# Sektörel - Sağlık
+### Sektörel - Sağlık
 https://www.sektorel.com.tr/rss/saglik-6
 
-# Sözcü
+### Sözcü
 https://www.sozcu.com.tr/rss/saglik.xml
 
-# TRT - Sağlık Haberleri
+### TRT - Sağlık Haberleri
 http://www.trt.net.tr/rss/saglik.rss
 
-# GÖZ - Hastane Plus
+### GÖZ - Hastane Plus
 https://hastaneplus.com/rss/goz/249.xml
 
-# Hastane Plus
+### Hastane Plus
 https://hastaneplus.com/rss.xml
 
