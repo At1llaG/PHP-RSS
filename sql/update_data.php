@@ -1,15 +1,17 @@
 <?php
 
-include('errors.php');
-include('connect_db.php');
+  include('errors.php');
+  include('connect_db.php');
 
-$sql = "UPDATE MyGuests SET lastname='Doe' WHERE id=2";
+  $condition = "title='Haber Basligi'";
+  $sql = "UPDATE MyGuests SET $condition WHERE id=2";
 
-if ($conn->query($sql) === TRUE) {
-  echo "Record updated successfully";
-} else {
-  echo "Error updating record: " . $conn->error;
-}
+  if ($conn->query($sql) === TRUE) {
+    echo "Record updated successfully";
+  } 
+  
+  else {
+    echo "Error updating record: " . $conn->error;
+  }
 
-$conn->close();
 ?>

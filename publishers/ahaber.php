@@ -28,7 +28,7 @@
         $conf = new SqlConf();
 
         $query = "";
-        $dbname = $conf->getDbName();
+        $dbname = $conf->getDatabase();
         $tableName = $conf->getTableName();
         $conn = connectMysql();
         $conn -> select_db("$dbname");

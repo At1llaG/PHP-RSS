@@ -1,6 +1,6 @@
 <?php
 
-    include_once(dirname( dirname(__FILE__) ) . '/config/sql_conf.php');
+    //include_once(dirname( dirname(__FILE__) ) . '/config/sql_conf.php');
     include_once(dirname( dirname(__FILE__) ) . '/sql/connect_mysql.php');
     include_once(dirname( dirname(__FILE__) ) . '/sql/disconnect_mysql.php');
     include_once(dirname( dirname(__FILE__) ) . '/sql/create_db.php');
@@ -8,7 +8,7 @@
 
     $conf = new SqlConf();
 
-    $dbname = $conf->getDbName();
+    $dbname = $conf->getDatabase();
     $tableName = $conf->getTableName();
 
     $conn = connectMysql();

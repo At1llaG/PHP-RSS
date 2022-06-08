@@ -40,11 +40,11 @@
         }
 
         //DATABASE
-        public function setDbName($dbname) {
+        public function setDatabase($dbname) {
             $this->dbname = $dbname;
         }
 
-        public function getDbName() {
+        public function getDatabase() {
             return $this->dbname;
         }
 
@@ -59,7 +59,7 @@
 
     }
 
-    
+
     //USAGE =>
 
     //include_once(dirname( dirname(__FILE__) ) . '/config/sql_conf.php');
