@@ -9,8 +9,8 @@
 
         private $hostname = "localhost:3306";
 
-        private $dbname = "SaglikDB";
-        private $tableName = "Entries";
+        private $dbname = "saglikdb";
+        private $tableName = "entries";
 
         //USER
         public function setUserName($user) {
