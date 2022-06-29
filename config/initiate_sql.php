@@ -15,14 +15,14 @@
 
     if (empty (mysqli_fetch_array(mysqli_query($conn,"SHOW DATABASES LIKE '$dbname'")))) 
     {
-        echo "DB not exist"; 
+        echo "DB does not exist"; 
         echo PHP_EOL;
 
         createDatabase($conn, $dbname);
     }
 
     else {
-        echo "DB exist";
+        echo "DB does exist";
         echo PHP_EOL;
 
         $conn -> select_db("$dbname");
